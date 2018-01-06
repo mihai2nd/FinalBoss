@@ -1,0 +1,18 @@
+<template name="App_body">
+	<main class="main-layout">
+  {{> Template.dynamic template=main}}
+	</main>
+  <aside>
+    {{> Template.dynamic template=aside}}
+  </aside>
+</template>
+
+<template name="PostLayout">
+	<div class="new-post-container">
+		{{>quickForm collection="Posts" id="insertPostForm" type="insert" class="new-post-form"}}
+	</div>
+</template>
+
+<template name="SitePosts">
+	<h1>The site's posts</h1>
+</template>	

@@ -1,0 +1,10 @@
+<template name="App_home">
+{{#if currentUser}}
+{{>SideNav}}
+<p>You are logged in.</p>
+{{>logout}}
+{{else}}
+  {{> register}}
+  {{> login}}
+  {{/if}}
+</template>
